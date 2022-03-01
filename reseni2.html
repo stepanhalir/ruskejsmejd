@@ -1,0 +1,45 @@
+<html>
+<body>
+<script type="text/javascript">
+        function addimage() { 
+          var img = document.createElement("img");
+          img.src = "https://cdn.shopify.com/s/files/1/1061/1924/products/Middle_Finger_Emoji_894a7ecd-277f-479e-9967-44d20813a2d6_large.png?v=1571606036"; 
+
+          // add a class
+          var class_name = "image";
+          img.setAttribute("class", class_name);
+          
+          document.body.appendChild(img);
+        }
+</script>
+<style>
+    .image {
+        position: relative;
+        width: 100px;
+        height: auto;
+        animation-name: moveImage;
+        animation-fill-mode: forwards;
+        animation-duration: 3s;
+    }
+
+    @keyframes moveImage {
+        0% {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        75% {
+            transform: scale(6);
+        }
+        100% {
+            top: 50%;
+            left: 20%;
+            width: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+    <button onclick="addimage();">Click</button>
+</body>
+</html>

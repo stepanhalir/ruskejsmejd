@@ -1,0 +1,57 @@
+/* Document styles */
+:root {
+    --UBlue: rgb(58,117,196);
+    --UYellow: rgb(249,221,22);
+    --white: #ffffff;
+    --textWhite: #ffffff;
+    --textGray: #2B2B2B;
+    --FBBlue: #0B84EE;
+}
+
+body {
+    cursor: url("assets/images/cursor.ico"), default;
+}
+
+.image, #fingermiddle {
+    position: relative;
+    width: 100px;
+    height: auto;
+    animation-name: clickIcon;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    pointer-events: none;
+}
+
+@keyframes clickIcon {
+    50% {
+        transform: scale(2);
+    }
+    90% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.leftcolumn > footer a {
+    display: block;
+    padding: 0.5em;
+    background-color: var(--FBBlue);
+    font-weight: 800;
+    color: var(--textWhite);
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.leftcolumn > footer a::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../images/fbicon.png");
+    background-position: center;
+    margin-right: 0.25em;
+    width: 20px;
+    height: 20px;
+}

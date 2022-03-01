@@ -1,0 +1,89 @@
+/* Layout styles */
+html, * {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;;
+}
+
+/* Left column */
+.leftcolumn {
+    position: relative;
+    width: 225px;
+    height: 100%;
+}
+
+.webheader {
+    position: relative;
+    padding: 1em;
+}
+
+.webheader img {
+    position: relative;
+    width: 100%;
+}
+
+.leftcolumn__userstate, .leftcolumn__totalcounter {
+    padding: 1.5em 1em;
+    color: var(--textWhite);
+}
+
+.leftcolumn__userstate {
+    background-color: var(--UBlue);
+    margin-top: 2em;
+}
+
+.leftcolumn__userstate .userstate__level {
+    margin-bottom: 1.5em;
+}
+
+.leftcolumn__totalcounter {
+    padding: 1.5em 1em;
+    background-color: var(--UYellow);
+    color: var(--textWhite);
+    margin-top: 0.5em;
+}
+
+.leftcolumn__infopanel {
+    margin-top: 2em;
+}
+
+.leftcolumn__infopanel p {
+    margin-bottom: 0.5em;
+}
+
+.leftcolumn > footer {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+
+/* Right column */
+
+.rightcolumn {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-left: 1em;
+}
+
+.rightcolumn__clickarea {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../images/clickareaimage.jpeg") no-repeat;
+    background-size: cover;
+
+}
+

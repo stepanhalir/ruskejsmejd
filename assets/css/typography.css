@@ -1,0 +1,23 @@
+@import "fonts.css";
+
+html {
+    font-size: 100%;
+    font-family: "Gilroy", sans-serif;
+}
+
+.userstate__level > p:first-child, .userstate__counter > p:first-child, .leftcolumn__totalcounter > p:first-child {
+    font-weight: 800;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+#datalevel, .userstate__counter > div p, .leftcolumn__totalcounter #datatotalcount {
+    font-size: 2.25rem;
+}
+
+.leftcolumn__infopanel p a {
+    color: var(--textGray);
+    font-weight: 800;
+    font-size: 1.15rem;
+}
